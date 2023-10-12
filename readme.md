@@ -99,5 +99,79 @@ hexo s
 ```
 
 ## Github Action 自动发布
-参考[GitHub Actions 自动部署 Hexo 博客](https://blog.zhanganzhi.com/zh-CN/2022/06/0800d76d306e/)
+参考
+- [GitHub Actions 自动部署 Hexo 博客](https://blog.zhanganzhi.com/zh-CN/2022/06/0800d76d306e/)
+- [利用 GitHub Action 自动部署 Hexo 博客](https://cloud.tencent.com/developer/article/2201648)
 
+### 创建Github Token
+选择用户Settings，进入Developer Settings
+![img_2.png](img_2.png)
+
+开始创建Fine-grained personal access tokens
+![img_1.png](img_1.png)
+
+选择Token的生效仓库和权限范围
+![img_3.png](img_3.png)
+
+
+## 保存Github Token
+进入博客所在的仓库，将生成的Github Token保存为环境变量密钥
+![img.png](img.png)
+
+## 创建Github Action工作流
+创建文件.github/workflows/auto_hexo_generate.yml
+
+```yaml
+name: AutoHexoGenerate # 部署
+
+on: # 触发条件
+  push:
+    branches:
+      - dev # 分支
+
+  release:
+    types:
+      - published # 推送新版本号
+
+  workflow_dispatch: # 手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+#      - uses: actions/checkout@v2
+#      - name: Setup tmate session
+#        uses: mxschmitt/action-tmate@v3
+
+      - name: Checkout # Checkout 仓库
+        uses: actions/checkout@v2
+        with:
+          ref: dev
+
+      - name: Setup Node # 安装 Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "20.x"
+
+      - name: Install Hexo # 安装 Hexo
+        run: |
+          npm install -g hexo-cli
+          npm install
+
+      - name: Generate # 生成
+        run: |
+          hexo clean
+          hexo generate
+      - name: Deploy # 部署
+        run: |
+          git config --global user.name "shenbing"
+          git config --global user.email "shenbinglife@163.com"
+          export TZ='Asia/Shanghai'
+          cd public/
+          git init -b main
+          git add -A
+          git commit -m "Create by workflows"
+          git remote add origin https://github.com/shenbinglife/shenbinglife.github.io.git
+          git push https://shenbinglife:${{ secrets.AUTO_HEXO_GENERATE_GITHUB_TOKEN }}@github.com/shenbinglife/shenbinglife.github.io.git -f
+```
