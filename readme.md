@@ -175,3 +175,9 @@ jobs:
           git remote add origin https://github.com/shenbinglife/shenbinglife.github.io.git
           git push https://shenbinglife:${{ secrets.AUTO_HEXO_GENERATE_GITHUB_TOKEN }}@github.com/shenbinglife/shenbinglife.github.io.git -f
 ```
+
+## 写作
+### 创建一篇文章
+```shell
+hexo new  2023-10-11-使用Hexo
+```
