@@ -5,7 +5,7 @@
 # Site
 title: 散步留馨的博客
 subtitle: ''
-description: '唯美食与爱不可辜负'
+description: '唯爱与美食不可辜负'
 keywords:
 author: 散步留馨
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://shenbinglife.github.io
 permalink: :title/
 permalink_defaults:
 pretty_urls:
