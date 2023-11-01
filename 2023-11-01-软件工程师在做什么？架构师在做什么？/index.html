@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo-512.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"shenbinglife.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="软件工程师现在的软件工程师太难了，他们要工作的内容太多而且太繁杂。 理想中的软件工程师要做的内容：  接收需求 实现代码 单元测试  实际上软件工程师的要做的内容：  丰富和改善需求内容（产品经理？需求分析师？） 架构设计，包括软硬件选型、服务间调用、日志系统、监控系统（架构师？平台支持？） 编程架构（架构师？项目Leader？） 实现代码（软件工程师本职 √） 单元测试（基本无了，从没遇见过写单">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023-11-01-软件工程师在做什么？架构师在做什么？">
+<meta property="og:url" content="https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/index.html">
+<meta property="og:site_name" content="散步留馨的博客">
+<meta property="og:description" content="软件工程师现在的软件工程师太难了，他们要工作的内容太多而且太繁杂。 理想中的软件工程师要做的内容：  接收需求 实现代码 单元测试  实际上软件工程师的要做的内容：  丰富和改善需求内容（产品经理？需求分析师？） 架构设计，包括软硬件选型、服务间调用、日志系统、监控系统（架构师？平台支持？） 编程架构（架构师？项目Leader？） 实现代码（软件工程师本职 √） 单元测试（基本无了，从没遇见过写单">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-01T09:30:35.000Z">
+<meta property="article:modified_time" content="2023-11-01T11:10:29.772Z">
+<meta property="article:author" content="散步留馨">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/","path":"2023-11-01-软件工程师在做什么？架构师在做什么？/","title":"2023-11-01-软件工程师在做什么？架构师在做什么？"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2023-11-01-软件工程师在做什么？架构师在做什么？ | 散步留馨的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">散步留馨的博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88"><span class="nav-number">1.</span> <span class="nav-text">软件工程师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9E%B6%E6%9E%84%E5%B8%88"><span class="nav-number">2.</span> <span class="nav-text">架构师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E6%80%9D"><span class="nav-number">3.</span> <span class="nav-text">反思</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E5%8F%8D%E5%87%BB"><span class="nav-number">4.</span> <span class="nav-text">软件工程师的反击</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%A8%E4%B9%B1%E5%8F%8D%E6%AD%A3"><span class="nav-number">5.</span> <span class="nav-text">拨乱反正</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9E%B6%E6%9E%84%E5%B8%88%E5%A6%82%E4%BD%95%E5%85%A5%E9%97%A8%EF%BC%9F"><span class="nav-number">6.</span> <span class="nav-text">架构师如何入门？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">7.</span> <span class="nav-text">结语</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="散步留馨"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">散步留馨</p>
+  <div class="site-description" itemprop="description">唯爱与美食不可辜负</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/shenbinglife" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;shenbinglife" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:shenbinglife@163.com" title="E-Mail → mailto:shenbinglife@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="散步留馨">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="散步留馨的博客">
+      <meta itemprop="description" content="唯爱与美食不可辜负">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2023-11-01-软件工程师在做什么？架构师在做什么？ | 散步留馨的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2023-11-01-软件工程师在做什么？架构师在做什么？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-11-01 09:30:35 / 修改时间：11:10:29" itemprop="dateCreated datePublished" datetime="2023-11-01T09:30:35+00:00">2023-11-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="软件工程师"><a href="#软件工程师" class="headerlink" title="软件工程师"></a>软件工程师</h2><p>现在的软件工程师太难了，他们要工作的内容太多而且太繁杂。</p>
+<p>理想中的软件工程师要做的内容：</p>
+<ul>
+<li>接收需求</li>
+<li>实现代码</li>
+<li>单元测试</li>
+</ul>
+<p>实际上软件工程师的要做的内容：</p>
+<ul>
+<li>丰富和改善需求内容（产品经理？需求分析师？）</li>
+<li>架构设计，包括软硬件选型、服务间调用、日志系统、监控系统（架构师？平台支持？）</li>
+<li>编程架构（架构师？项目Leader？）</li>
+<li>实现代码（软件工程师本职 √）</li>
+<li>单元测试（基本无了，从没遇见过写单元测试的）</li>
+<li>功能自测（测试呢？）</li>
+<li>软件发布（CI&#x2F;CD？）</li>
+<li>软件运维，包括配置告警和监控（运维？售后？）</li>
+</ul>
+<h2 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a>架构师</h2><ul>
+<li>PPT</li>
+<li>PPT</li>
+<li>还是PPT</li>
+</ul>
+<h2 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h2><p>经常出现的一个现象是什么？</p>
+<p>架构师或者产品经理拿着他的PPT去宣传软件工程师的系统，然后用户使用的时候才发现，架构师对系统功能的介绍完全是南辕北辙，反而让软件工程师背锅。</p>
+<p>为什么呢？  </p>
+<p>一个是架构师或者说产品经理从来没有一个检验的标准，就是说大部分的人入职完全是靠PPT和演讲入职的。<br>而他们入职后，很多软件工程师就会发现他们在整个项目中并没有输出任何有用的信息，不是说他们的岗位应该被干掉，而是说大部分在这个岗位的人都没有符合的才能。</p>
+<ul>
+<li>没有整理出完善的需求文档，需要软件工程师自己对接</li>
+<li>没有可复用的软件架构，需要软件工程师自己搭建</li>
+<li>没有可复用的建模工具，需要软件工程师自己建模</li>
+<li>没有配套的测试、CI&#x2F;CD、运维，一切都是软件工程师自己埋头苦干</li>
+<li>甚至于，架构师说：软件工程师，你把你的软件写一份部署文档、使用文档、交接文档吧。。。。</li>
+</ul>
+<h2 id="软件工程师的反击"><a href="#软件工程师的反击" class="headerlink" title="软件工程师的反击"></a>软件工程师的反击</h2><ul>
+<li>我在忙，找别人吧</li>
+</ul>
+<p>反正软件工程师和项目经理之间不可调和的矛盾由此展开。</p>
+<h2 id="拨乱反正"><a href="#拨乱反正" class="headerlink" title="拨乱反正"></a>拨乱反正</h2><p>架构师或者假如说你是项目Leader，你到底应该输出什么？ </p>
+<ul>
+<li>需求文档，甚至接口文档、使用文档</li>
+<li>软件架构，包括源码的框架、个别复杂用例的设计流程图、多系统间的调用关系、流量管理、权限设计等等</li>
+<li>提供软件的安装和部署方式</li>
+<li>提供日志和监控系统</li>
+</ul>
+<h2 id="架构师如何入门？"><a href="#架构师如何入门？" class="headerlink" title="架构师如何入门？"></a>架构师如何入门？</h2><p>不是说任何人看了几篇秒杀系统如何设计就是架构师了，说系统要添加缓存系统、链路上全部添加日志和监控，然后对接了xx系统就可以。</p>
+<div class="note primary"><p>基本上，所有不是从软件工程师成长的架构师都不算架构师。</p>
+</div>
+
+<p>架构师，虽然有很多方向，我这边就只说一下有关我这个大数据软件工程师需要的架构师吧  </p>
+<ul>
+<li>PPT能力：不能说PPT没有用，只要负责的将系统的需求和功能阐述给软件开发工程师，那么软件工程师何来那么多的怨念</li>
+<li>编程能力</li>
+<li>平台能力：CICD、监控、日志、K8s、Linux</li>
+<li>算法和网络协议</li>
+<li>云平台能力（其实我觉的云平台一直是一种伪能力，因为如果你有本地部署的能力，云平台肯定没有问题。关键是现在很多架构师都决定使用云平台，但是呢，从来没有完整的看完云平台的能力和适用场景，导致很多不适用的问题，真是拍脑袋的决定）</li>
+</ul>
+<p>任何没有掌握以上能力的架构师，不配拥有我这枚程序员；或者说，难道我一直在拿着程序员的工资，干着架构师的活？</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>天下软件工程师苦架构师久矣，愿每个程序员都能遇到最好的架构师。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023-10-12-%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4Git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%96%87%E4%BB%B6/" rel="prev" title="如何删除Git提交记录中的大文件">
+                  <i class="fa fa-angle-left"></i> 如何删除Git提交记录中的大文件
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/hello-world/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">散步留馨</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
