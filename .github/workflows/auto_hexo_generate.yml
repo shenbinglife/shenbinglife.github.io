@@ -32,11 +32,13 @@ jobs:
 
       - name: Install Hexo # 安装 Hexo
         run: |
+          sudo apt install git-restore-mtime
           npm install -g hexo-cli
           npm install
 
       - name: Generate # 生成
         run: |
+          git restore-mtime
           hexo clean
           hexo generate
       - name: Deploy # 部署
