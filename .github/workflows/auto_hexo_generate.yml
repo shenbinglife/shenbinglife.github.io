@@ -41,7 +41,7 @@ jobs:
           hexo clean
           git restore-mtime
           ls -al .
-          ls -al source/_post
+          ls -al source/_posts
           hexo generate
       - name: Deploy # 部署
         run: |
