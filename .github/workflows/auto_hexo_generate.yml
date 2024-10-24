@@ -38,8 +38,10 @@ jobs:
 
       - name: Generate # 生成
         run: |
-          git restore-mtime
           hexo clean
+          git restore-mtime
+          ls -al .
+          ls -al source/_post
           hexo generate
       - name: Deploy # 部署
         run: |
