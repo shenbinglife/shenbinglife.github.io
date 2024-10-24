@@ -21,5 +21,6 @@ type: about
 - 运维及监控
 - CI/CD，Jenkins
 
-联系方式，接受各类指正和提问，包括情感问题 ^-^：
+联系方式：
+- 微信：sanbuliuxin
 - shenbinglife@163.com
