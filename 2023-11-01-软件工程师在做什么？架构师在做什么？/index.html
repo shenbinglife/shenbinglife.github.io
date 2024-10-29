@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>软件工程师在做什么？架构师在做什么？ - 散步留馨的博客</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="散步留馨的博客"><meta name="msapplication-TileImage" content="/images/favicon-32x32.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="散步留馨的博客"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="现在的软件工程师的处境太难了，他们要工作的内容既多又杂，而架构师并没有承担起应有的责任。 在此，我说说我对目前工作中架构师和工程师的理解"><meta property="og:type" content="blog"><meta property="og:title" content="软件工程师在做什么？架构师在做什么？"><meta property="og:url" content="https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/"><meta property="og:site_name" content="散步留馨的博客"><meta property="og:description" content="现在的软件工程师的处境太难了，他们要工作的内容既多又杂，而架构师并没有承担起应有的责任。 在此，我说说我对目前工作中架构师和工程师的理解"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://shenbinglife.github.io/images/2021-11-01.svg"><meta property="article:published_time" content="2023-11-01T09:30:35.000Z"><meta property="article:modified_time" content="2023-11-01T09:30:35.000Z"><meta property="article:author" content="shenbinglife"><meta property="article:tag" content="架构"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://shenbinglife.github.io/images/2021-11-01.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/"},"headline":"软件工程师在做什么？架构师在做什么？","image":[],"datePublished":"2023-11-01T09:30:35.000Z","dateModified":"2023-11-01T09:30:35.000Z","author":{"@type":"Person","name":"散步留馨"},"publisher":{"@type":"Organization","name":"散步留馨的博客","logo":{"@type":"ImageObject","url":"https://shenbinglife.github.io/images/apple-icon.png"}},"description":"现在的软件工程师的处境太难了，他们要工作的内容既多又杂，而架构师并没有承担起应有的责任。 在此，我说说我对目前工作中架构师和工程师的理解"}</script><link rel="canonical" href="https://shenbinglife.github.io/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/"><link rel="icon" href="/images/favicon-32x32.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/apple-icon.png" alt="散步留馨的博客" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">档案</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/shenbinglife"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/2021-11-01.svg" alt="软件工程师在做什么？架构师在做什么？"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-11-01T09:30:35.000Z" title="11/1/2023, 9:30:35 AM">2023-11-01</time>发表</span><span class="level-item"><time dateTime="2023-11-01T09:30:35.000Z" title="11/1/2023, 9:30:35 AM">2023-11-01</time>更新</span><span class="level-item">9 分钟读完 (大约1406个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">软件工程师在做什么？架构师在做什么？</h1><div class="content"><p>现在的软件工程师的处境太难了，他们要工作的内容既多又杂，而架构师并没有承担起应有的责任。</p>
+<p>在此，我说说我对目前工作中架构师和工程师的理解</p>
+<span id="more"></span>
+<h2 id="软件工程师"><a href="#软件工程师" class="headerlink" title="软件工程师"></a>软件工程师</h2><p>理想中的软件工程师要做的内容：</p>
+<ul>
+<li>接收需求</li>
+<li>实现代码</li>
+<li>单元测试</li>
+</ul>
+<p>实际上软件工程师的要做的内容：</p>
+<ul>
+<li>丰富和改善需求内容（产品经理？需求分析师？）</li>
+<li>架构设计，包括软硬件选型、服务间调用、日志系统、监控系统（架构师？平台支持？）</li>
+<li>编程架构（架构师？项目Leader？）</li>
+<li>实现代码（软件工程师本职 √）</li>
+<li>单元测试（基本无了，从没遇见过写单元测试的）</li>
+<li>功能自测（测试呢？）</li>
+<li>软件发布（CI&#x2F;CD？）</li>
+<li>软件运维，包括配置告警和监控，还有长期维护（运维？售后？）</li>
+</ul>
+<h2 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a>架构师</h2><ul>
+<li>PPT</li>
+<li>PPT</li>
+<li>还是PPT</li>
+</ul>
+<h2 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h2><p>经常出现的一个现象是什么？</p>
+<p>架构师或者产品经理拿着他的PPT去宣传软件工程师的系统，然后用户使用的时候才发现，架构师对系统功能的介绍完全是南辕北辙，反而让软件工程师背锅。</p>
+<p>为什么呢？  </p>
+<p>一个是架构师或者说产品经理从来没有一个检验的标准，就是说大部分的人入职完全是靠PPT和演讲入职的。<br>而他们入职后，很多软件工程师就会发现他们在整个项目中并没有输出任何有用的信息，不是说他们的岗位应该被干掉，而是说大部分在这个岗位的人都没有符合的才能。</p>
+<ul>
+<li>没有整理出完善的需求文档，需要软件工程师自己对接</li>
+<li>没有可复用的软件架构，需要软件工程师自己搭建</li>
+<li>没有可复用的建模工具，需要软件工程师自己建模</li>
+<li>没有配套的测试、CI&#x2F;CD、运维，一切都是软件工程师自己埋头苦干</li>
+<li>甚至于，架构师说：软件工程师，你把你的软件写一份部署文档、使用文档、交接文档吧。。。。</li>
+</ul>
+<h2 id="软件工程师的反击"><a href="#软件工程师的反击" class="headerlink" title="软件工程师的反击"></a>软件工程师的反击</h2><ul>
+<li>我在忙，找别人吧</li>
+</ul>
+<p>反正软件工程师和项目经理之间不可调和的矛盾由此展开。</p>
+<h2 id="拨乱反正"><a href="#拨乱反正" class="headerlink" title="拨乱反正"></a>拨乱反正</h2><p>架构师或者假如说你是项目Leader，你到底应该输出什么？ </p>
+<ul>
+<li>需求文档，甚至接口文档、使用文档</li>
+<li>软件架构，包括源码的框架、个别复杂用例的设计流程图、多系统间的调用关系、流量管理、权限设计等等</li>
+<li>提供软件的安装和部署方式</li>
+<li>提供日志和监控系统</li>
+</ul>
+<p>当然，上面的活不全是架构师的活，但是应该是架构师在介入一个系统时应该考虑和解决的事；上面所需要的Devops系统也并不是架构师一个人能解决的，但是如果是在没有这些Devops系统时，就更应该由架构师针对整个公司环境给出相关的方案。</p>
+<p>如果说这些都不是架构师的活，那请问架构师的意义何在？</p>
+<p>这里还要说一句，在我经历的很多项目和团队中，没有架构师，只有一个开发Leader，我很想说那么这些就应该归属到项目Leader身上去发现和解决，而不是无穷无尽的分配任务。</p>
+<h2 id="架构师如何入门？"><a href="#架构师如何入门？" class="headerlink" title="架构师如何入门？"></a>架构师如何入门？</h2><p>不是说任何人看了几篇秒杀系统如何设计就是架构师了，说系统要添加缓存系统、链路上全部添加日志和监控，然后对接了xx系统就可以。</p>
+<p>基本上，所有不是从软件工程师成长的架构师都不算架构师。</p>
+<p>架构师，虽然有很多方向，我这边就只说一下有关我这个大数据软件工程师需要的架构师吧  </p>
+<ul>
+<li>PPT能力：不能说PPT没有用，只要负责的将系统的需求和功能阐述给软件开发工程师，那么软件工程师何来那么多的怨念</li>
+<li>编程能力</li>
+<li>平台能力：CICD、监控、日志、K8s、Linux</li>
+<li>算法和网络协议</li>
+<li>云平台能力（其实我觉的云平台一直是一种伪能力，因为如果你有本地部署的能力，云平台肯定没有问题。关键是现在很多架构师都决定使用云平台，但是呢，从来没有完整的看完云平台的能力和适用场景，导致很多不适用的问题，真是拍脑袋的决定）</li>
+</ul>
+<p>任何没有掌握以上能力的架构师，不配拥有我这枚程序员；或者说，难道我一直在拿着程序员的工资，干着架构师的活？</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>天下软件工程师苦架构师久矣，愿每个程序员都能遇到最好的架构师。</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>软件工程师在做什么？架构师在做什么？</p><p><a href="https://shenbinglife.github.io/2023-11-01-软件工程师在做什么？架构师在做什么？/">https://shenbinglife.github.io/2023-11-01-软件工程师在做什么？架构师在做什么？/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>散步留馨</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2023-11-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2023-11-01</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%9E%B6%E6%9E%84/">架构</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/images/wechat.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024-10-24-%E4%B8%89%E5%8D%81%E5%B4%A9%E6%BA%83/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">三十崩溃</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023-10-12-%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4Git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%96%87%E4%BB%B6/"><span class="level-item">如何删除Git提交记录中的大文件</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "641234503d3365369a8c9ca185c21540",
+            repo: "shenbinglife.github.io",
+            owner: "shenbinglife",
+            clientID: "Ov23li3H76RfxQ76WBQ2",
+            clientSecret: "06fcc32289737a07e1af863313fbb33db844d84e",
+            admin: ["shenbinglife"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/avatar.jpg" alt="散步留馨"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">散步留馨</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>南京</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">6</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/shenbinglife"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">教程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-10-29T16:45:00.000Z">2024-10-29</time></p><p class="title"><a href="/2024-10-29-%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E5%99%A8/">任务调度器</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-10-24T19:46:00.000Z">2024-10-24</time></p><p class="title"><a href="/2024-10-24-%E4%B8%89%E5%8D%81%E5%B4%A9%E6%BA%83/">三十崩溃</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-01T09:30:35.000Z">2023-11-01</time></p><p class="title"><a href="/2023-11-01-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9C%A8%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/">软件工程师在做什么？架构师在做什么？</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-12T13:51:11.000Z">2023-10-12</time></p><p class="title"><a href="/2023-10-12-%E5%A6%82%E4%BD%95%E5%88%A0%E9%99%A4Git%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%96%87%E4%BB%B6/">如何删除Git提交记录中的大文件</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-11T18:40:44.000Z">2023-10-11</time></p><p class="title"><a href="/2023-10-11-%E4%BD%BF%E7%94%A8Hexo/">使用Hexo</a></p><p class="categories"><a href="/categories/%E6%95%99%E7%A8%8B/">教程</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/10/"><span class="level-start"><span class="level-item">十月 2024</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/11/"><span class="level-start"><span class="level-item">十一月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/java-%E8%B0%83%E5%BA%A6%E5%99%A8/"><span class="tag">java,调度器</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%BA%E7%94%9F/"><span class="tag">人生</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%99%E7%A8%8B/"><span class="tag">教程</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9E%B6%E6%9E%84/"><span class="tag">架构</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/apple-icon.png" alt="散步留馨的博客" height="28"></a><p class="is-size-7"><span>&copy; 2024 散步留馨</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/shenbinglife"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
